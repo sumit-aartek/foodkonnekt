@@ -1,0 +1,26 @@
+RewriteEngine On
+
+# disable TRACK and TRACE http methods. 'RewriteEngine On' is required!
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+RewriteRule .* - [F]
+
+# Redirect non www to www.
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Redirect http to https
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+# Generate new url.
+RewriteRule ^([^/]*)/restaurants/([^/]*)$ /script/index.php?controller=pjFrontLayouts&action=pjActionIndex&name=$1&restaurants=$2 [L]
+
+Options -Indexes
+ServerSignature Off
+<ifModule mod_headers.c>
+	Header unset X-Powered-By
+</ifModule>
+
+<IfModule php5_module>
+	php_value session.cookie_httponly true
+</IfModule>

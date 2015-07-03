@@ -1,0 +1,126 @@
+[16-Jun-2015 07:56:00 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting ',' or ';' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 31
+[16-Jun-2015 07:56:15 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 07:56:15 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to encrypt data. Perhaps it is bigger than the key size?' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php:13
+Stack trace:
+#0 /home4/desisaud/public_html/foodkonnekt.com/RSA.php(31): MyEncryption->encrypt('123456789')
+#1 {main}
+  thrown in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 13
+[16-Jun-2015 07:57:11 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 07:57:11 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to encrypt data. Perhaps it is bigger than the key size?' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php:13
+Stack trace:
+#0 /home4/desisaud/public_html/foodkonnekt.com/RSA.php(31): MyEncryption->encrypt('123456789')
+#1 {main}
+  thrown in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 13
+[16-Jun-2015 07:58:00 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 07:58:00 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to encrypt data. Perhaps it is bigger than the key size?' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php:13
+Stack trace:
+#0 /home4/desisaud/public_html/foodkonnekt.com/RSA.php(31): MyEncryption->encrypt('123456789')
+#1 {main}
+  thrown in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 13
+[16-Jun-2015 07:58:02 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 07:58:02 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to encrypt data. Perhaps it is bigger than the key size?' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php:13
+Stack trace:
+#0 /home4/desisaud/public_html/foodkonnekt.com/RSA.php(31): MyEncryption->encrypt('123456789')
+#1 {main}
+  thrown in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 13
+[16-Jun-2015 07:58:09 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 07:58:09 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to encrypt data. Perhaps it is bigger than the key size?' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php:13
+Stack trace:
+#0 /home4/desisaud/public_html/foodkonnekt.com/RSA.php(31): MyEncryption->encrypt('123456789')
+#1 {main}
+  thrown in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 13
+[16-Jun-2015 07:58:47 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 07:58:47 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to encrypt data. Perhaps it is bigger than the key size?' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php:13
+Stack trace:
+#0 /home4/desisaud/public_html/foodkonnekt.com/RSA.php(31): MyEncryption->encrypt('12349')
+#1 {main}
+  thrown in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 13
+[16-Jun-2015 07:59:41 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 07:59:41 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to encrypt data. Perhaps it is bigger than the key size?' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php:13
+Stack trace:
+#0 /home4/desisaud/public_html/foodkonnekt.com/RSA.php(31): MyEncryption->encrypt('')
+#1 {main}
+  thrown in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 13
+[16-Jun-2015 08:00:29 America/Chicago] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 30
+[16-Jun-2015 08:01:15 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 08:01:15 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to encrypt data. Perhaps it is bigger than the key size?' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php:13
+Stack trace:
+#0 /home4/desisaud/public_html/foodkonnekt.com/RSA.php(31): MyEncryption->encrypt('12345')
+#1 {main}
+  thrown in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 13
+[16-Jun-2015 08:03:00 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 08:03:00 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to encrypt data. Perhaps it is bigger than the key size?' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php:13
+Stack trace:
+#0 /home4/desisaud/public_html/foodkonnekt.com/RSA.php(32): MyEncryption->encrypt('12345')
+#1 {main}
+  thrown in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 13
+[16-Jun-2015 08:03:06 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 08:03:06 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to encrypt data. Perhaps it is bigger than the key size?' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php:13
+Stack trace:
+#0 /home4/desisaud/public_html/foodkonnekt.com/RSA.php(32): MyEncryption->encrypt('12345')
+#1 {main}
+  thrown in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 13
+[16-Jun-2015 08:06:48 America/Chicago] PHP Warning:  openssl_public_encrypt(): key parameter is not a valid public key in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 08:06:48 America/Chicago] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to encrypt data. Perhaps it is bigger than the key size?' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php:13
+Stack trace:
+#0 /home4/desisaud/public_html/foodkonnekt.com/RSA.php(32): MyEncryption->encrypt('12345')
+#1 {main}
+  thrown in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 13
+[16-Jun-2015 08:14:16 America/Chicago] PHP Fatal error:  Class 'Math_BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 08:15:24 America/Chicago] PHP Parse error:  syntax error, unexpected '65537' (T_LNUMBER) in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 6
+[16-Jun-2015 08:16:25 America/Chicago] PHP Fatal error:  Class 'Math_BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 11
+[16-Jun-2015 08:30:18 America/Chicago] PHP Fatal error:  Call to undefined function php_info() in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 3
+[16-Jun-2015 08:30:53 America/Chicago] PHP Fatal error:  Class 'Math_BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 12
+[16-Jun-2015 08:34:11 America/Chicago] PHP Warning:  include(library/php/Crypt/RSA.php): failed to open stream: No such file or directory in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 4
+[16-Jun-2015 08:34:11 America/Chicago] PHP Warning:  include(library/php/Crypt/RSA.php): failed to open stream: No such file or directory in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 4
+[16-Jun-2015 08:34:11 America/Chicago] PHP Warning:  include(): Failed opening 'library/php/Crypt/RSA.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 4
+[16-Jun-2015 08:34:11 America/Chicago] PHP Fatal error:  Class 'Crypt_RSA' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 08:46:44 America/Chicago] PHP Fatal error:  Class 'Math_BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 12
+[16-Jun-2015 08:48:38 America/Chicago] PHP Warning:  include(BigInterge.php): failed to open stream: No such file or directory in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 5
+[16-Jun-2015 08:48:38 America/Chicago] PHP Warning:  include(BigInterge.php): failed to open stream: No such file or directory in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 5
+[16-Jun-2015 08:48:38 America/Chicago] PHP Warning:  include(): Failed opening 'BigInterge.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 5
+[16-Jun-2015 08:48:38 America/Chicago] PHP Fatal error:  Class 'Math_BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 12
+[16-Jun-2015 08:49:11 America/Chicago] PHP Fatal error:  Call to undefined method Crypt_RSA::loadKey() in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 15
+[16-Jun-2015 09:05:01 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting ',' or ';' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 16
+[16-Jun-2015 09:05:13 America/Chicago] PHP Fatal error:  Class 'RSA' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 10
+[16-Jun-2015 09:20:52 America/Chicago] PHP Parse error:  syntax error, unexpected '$cardEncrypted' (T_VARIABLE) in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 16
+[16-Jun-2015 09:55:51 America/Chicago] PHP Warning:  include(Net/SSH2.php): failed to open stream: No such file or directory in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 6
+[16-Jun-2015 09:55:51 America/Chicago] PHP Warning:  include(Net/SSH2.php): failed to open stream: No such file or directory in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 6
+[16-Jun-2015 09:55:51 America/Chicago] PHP Warning:  include(): Failed opening 'Net/SSH2.php' for inclusion (include_path='.:/opt/php54/lib/php:phpseclib') in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 6
+[16-Jun-2015 10:23:41 America/Chicago] PHP Fatal error:  Class 'Crypt_RSA' not found in /home4/desisaud/public_html/foodkonnekt.com/GenPublicKey.php on line 8
+[16-Jun-2015 10:24:04 America/Chicago] PHP Fatal error:  Class 'RSA' not found in /home4/desisaud/public_html/foodkonnekt.com/GenPublicKey.php on line 8
+[16-Jun-2015 10:27:23 America/Chicago] PHP Fatal error:  Class 'RSA' not found in /home4/desisaud/public_html/foodkonnekt.com/GenPublicKey.php on line 8
+[16-Jun-2015 10:31:28 America/Chicago] PHP Fatal error:  Class 'phpseclib\Math\BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 480
+[16-Jun-2015 10:32:33 America/Chicago] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 51
+[16-Jun-2015 10:33:48 America/Chicago] PHP Fatal error:  Cannot redeclare class Math_BigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 363
+[16-Jun-2015 10:34:08 America/Chicago] PHP Fatal error:  Class 'phpseclib\Math\BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 483
+[16-Jun-2015 10:35:46 America/Chicago] PHP Fatal error:  Class 'phpseclib\Crypt\phpseclib\Math\BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 483
+[16-Jun-2015 10:39:54 America/Chicago] PHP Fatal error:  Cannot redeclare class Math_BigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 363
+[16-Jun-2015 10:41:32 America/Chicago] PHP Fatal error:  Cannot redeclare class Math_BigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 363
+[16-Jun-2015 10:43:21 America/Chicago] PHP Fatal error:  Cannot redeclare class BigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 364
+[16-Jun-2015 10:45:31 America/Chicago] PHP Fatal error:  Cannot redeclare class Math_BigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 364
+[16-Jun-2015 10:46:29 America/Chicago] PHP Fatal error:  Cannot redeclare class BigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 364
+[16-Jun-2015 10:48:52 America/Chicago] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';' in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 70
+[16-Jun-2015 10:49:08 America/Chicago] PHP Fatal error:  Class 'BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 484
+[16-Jun-2015 10:53:55 America/Chicago] PHP Fatal error:  Class 'phpseclib\Math\BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 484
+[16-Jun-2015 10:57:12 America/Chicago] PHP Fatal error:  Class 'phpseclib\Math\BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 484
+[16-Jun-2015 10:58:56 America/Chicago] PHP Fatal error:  Class 'phpseclib\Crypt\BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 484
+[16-Jun-2015 11:01:25 America/Chicago] PHP Fatal error:  Class 'phpseclib\Math\BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 484
+[16-Jun-2015 23:36:11 America/Chicago] PHP Fatal error:  Class 'phpseclib\Math\BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 484
+[16-Jun-2015 23:46:50 America/Chicago] PHP Fatal error:  Class 'phpseclib\Math\BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 484
+[16-Jun-2015 23:49:25 America/Chicago] PHP Fatal error:  Class 'phpseclib\Math\BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 484
+[17-Jun-2015 00:02:13 America/Chicago] PHP Fatal error:  Cannot redeclare class Math_BigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 364
+[17-Jun-2015 00:03:43 America/Chicago] PHP Fatal error:  Cannot redeclare class MathBigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 364
+[17-Jun-2015 00:04:31 America/Chicago] PHP Fatal error:  Cannot redeclare class MathBigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 363
+[17-Jun-2015 00:05:08 America/Chicago] PHP Fatal error:  Cannot redeclare class MBigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 363
+[17-Jun-2015 00:06:33 America/Chicago] PHP Fatal error:  Cannot redeclare class MBigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 363
+[17-Jun-2015 00:06:41 America/Chicago] PHP Fatal error:  Cannot redeclare class MBigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 363
+[17-Jun-2015 00:06:57 America/Chicago] PHP Fatal error:  Cannot redeclare class Math_BigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 363
+[17-Jun-2015 00:09:17 America/Chicago] PHP Fatal error:  Cannot redeclare class Math_BigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 363
+[17-Jun-2015 00:12:12 America/Chicago] PHP Fatal error:  Class 'phpseclib\Crypt\BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 484
+[17-Jun-2015 00:14:25 America/Chicago] PHP Fatal error:  Class 'phpseclib\Crypt\BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 484
+[17-Jun-2015 00:14:34 America/Chicago] PHP Fatal error:  Class 'phpseclib\Crypt\BigInteger' not found in /home4/desisaud/public_html/foodkonnekt.com/RSA.php on line 484
+[17-Jun-2015 00:18:25 America/Chicago] PHP Fatal error:  Cannot redeclare class Math_BigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 363
+[17-Jun-2015 00:19:10 America/Chicago] PHP Fatal error:  Cannot redeclare class MBigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 363
+[17-Jun-2015 00:20:21 America/Chicago] PHP Fatal error:  Cannot redeclare class Math_BigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 363
+[17-Jun-2015 02:18:44 America/Chicago] PHP Fatal error:  Cannot redeclare class Math_BigInteger in /home4/desisaud/public_html/foodkonnekt.com/BigInteger.php on line 363

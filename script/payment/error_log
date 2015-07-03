@@ -1,0 +1,112 @@
+[16-Jun-2015 04:28:36 America/Chicago] PHP Warning:  require_once(/home4/desisaud/public_html/foodkonnekt.com/paymentapp/config/config.inc.php): failed to open stream: No such file or directory in /home4/desisaud/public_html/foodkonnekt.com/payment/creditcard.php on line 2
+[16-Jun-2015 04:28:36 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '/home4/desisaud/public_html/foodkonnekt.com/paymentapp/config/config.inc.php' (include_path='.:/opt/php54/lib/php') in /home4/desisaud/public_html/foodkonnekt.com/payment/creditcard.php on line 2
+[16-Jun-2015 04:29:29 America/Chicago] PHP Warning:  require_once(/home4/desisaud/public_html/foodkonnekt.com/payment../app/config/config.inc.php): failed to open stream: No such file or directory in /home4/desisaud/public_html/foodkonnekt.com/payment/creditcard.php on line 2
+[16-Jun-2015 04:29:29 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '/home4/desisaud/public_html/foodkonnekt.com/payment../app/config/config.inc.php' (include_path='.:/opt/php54/lib/php') in /home4/desisaud/public_html/foodkonnekt.com/payment/creditcard.php on line 2
+[16-Jun-2015 04:30:15 America/Chicago] PHP Warning:  require_once(/home4/desisaud/public_html/foodkonnekt.com/payment/app/config/config.inc.php): failed to open stream: No such file or directory in /home4/desisaud/public_html/foodkonnekt.com/payment/creditcard.php on line 2
+[16-Jun-2015 04:30:15 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '/home4/desisaud/public_html/foodkonnekt.com/payment/app/config/config.inc.php' (include_path='.:/opt/php54/lib/php') in /home4/desisaud/public_html/foodkonnekt.com/payment/creditcard.php on line 2
+[16-Jun-2015 09:58:13 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 10
+[16-Jun-2015 09:58:36 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 10
+[16-Jun-2015 09:59:03 America/Chicago] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 10
+[16-Jun-2015 10:00:05 America/Chicago] PHP Parse error:  syntax error, unexpected 'data' (T_STRING) in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 11
+[17-Jun-2015 09:24:03 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 39
+[17-Jun-2015 09:24:40 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 39
+[19-Jun-2015 23:54:46 America/Chicago] PHP Parse error:  syntax error, unexpected 'CardNum' (T_STRING) in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 16
+[20-Jun-2015 05:12:27 America/Chicago] PHP Parse error:  syntax error, unexpected 'CardNum' (T_STRING) in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 16
+[20-Jun-2015 06:26:27 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/S6EP2119H3NF2/pay?access_token=73bbd1db-8776-3b53-f086-5a9fcc52506b): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[20-Jun-2015 06:26:57 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[20-Jun-2015 07:12:12 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/S6EP2119H3NF2/pay?access_token=73bbd1db-8776-3b53-f086-5a9fcc52506b): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[20-Jun-2015 07:12:30 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/S6EP2119H3NF2/pay?access_token=73bbd1db-8776-3b53-f086-5a9fcc52506b): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 05:45:09 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 05:45:22 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 05:45:30 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 05:45:53 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 09:34:05 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 09:34:29 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 09:53:14 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:18:17 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/S6EP2119H3NF2/pay?access_token=7febb074-14df-1a26-c063-187377f1302d): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:21:51 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:23:55 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:24:20 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:24:36 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:24:47 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:25:15 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:26:31 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:27:35 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:27:48 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:28:18 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:29:18 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:29:45 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[22-Jun-2015 10:31:24 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[23-Jun-2015 05:12:59 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/NNMR8G49BPHNW/pay?access_token=e1da28cc-60c8-c3a5-985b-8789e021dcc6): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[23-Jun-2015 05:13:13 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/NNMR8G49BPHNW/pay?access_token=e1da28cc-60c8-c3a5-985b-8789e021dcc6): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[23-Jun-2015 05:13:29 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/NNMR8G49BPHNW/pay?access_token=e1da28cc-60c8-c3a5-985b-8789e021dcc6): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[23-Jun-2015 05:13:56 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/NNMR8G49BPHNW/pay?access_token=e1da28cc-60c8-c3a5-985b-8789e021dcc6): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[23-Jun-2015 05:16:48 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/NNMR8G49BPHNW/pay?access_token=e1da28cc-60c8-c3a5-985b-8789e021dcc6): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[23-Jun-2015 07:22:05 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/N0GXX6V4WBM8T/pay?access_token=5f4690cb-05e4-9c35-b0e2-e1ba788b1908): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[23-Jun-2015 07:22:51 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/N0GXX6V4WBM8T/pay?access_token=5f4690cb-05e4-9c35-b0e2-e1ba788b1908): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[23-Jun-2015 07:23:24 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/N0GXX6V4WBM8T/pay?access_token=5f4690cb-05e4-9c35-b0e2-e1ba788b1908): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[25-Jun-2015 06:18:49 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/079GNYRSZHRJG/pay?access_token=43bdb994-8843-86d6-b19e-10a3bde82480): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[25-Jun-2015 06:19:13 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/079GNYRSZHRJG/pay?access_token=43bdb994-8843-86d6-b19e-10a3bde82480): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[25-Jun-2015 06:21:23 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[25-Jun-2015 06:21:59 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/079GNYRSZHRJG/pay?access_token=43bdb994-8843-86d6-b19e-10a3bde82480): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[25-Jun-2015 06:25:59 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/079GNYRSZHRJG/pay?access_token=43bdb994-8843-86d6-b19e-10a3bde82480): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[25-Jun-2015 06:40:13 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[25-Jun-2015 06:53:48 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[25-Jun-2015 06:54:00 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[25-Jun-2015 06:54:05 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[25-Jun-2015 06:54:46 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant//pay?access_token=): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 89
+[26-Jun-2015 04:55:49 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/X6GWVTNAH5AEW/pay?access_token=ede52b66-28af-4ddd-ca4c-fbe488a6f7eb): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 90
+[26-Jun-2015 04:56:07 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/X6GWVTNAH5AEW/pay?access_token=ede52b66-28af-4ddd-ca4c-fbe488a6f7eb): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 90
+[26-Jun-2015 05:21:03 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/X6GWVTNAH5AEW/pay?access_token=ede52b66-28af-4ddd-ca4c-fbe488a6f7eb): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 90
+[26-Jun-2015 09:59:55 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/X6GWVTNAH5AEW/pay?access_token=92be6429-4ceb-9d42-e414-60ec0b694e2e): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 90
+[26-Jun-2015 10:04:18 America/Chicago] PHP Warning:  file_get_contents(https://api.clover.com:443/v2/merchant/X6GWVTNAH5AEW/pay?access_token=92be6429-4ceb-9d42-e414-60ec0b694e2e): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in /home4/desisaud/public_html/foodkonnekt.com/payment/submit_txn.php on line 90

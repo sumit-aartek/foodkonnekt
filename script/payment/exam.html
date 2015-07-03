@@ -1,0 +1,79 @@
+<?php
+    /* 
+     * This is one of the PHP file to use in comjunction with other
+     * PHP sample code files to process a transaction to the LUCY Gateway.
+     * This is actually an HTML form but it has a php extension to
+     * help denote it as part of the php group of files.  You can rename it 
+     * if you like with an html extension, as it will work either way. 
+     * 
+     * The HTML code below uses an HTML table to create the form for the payment
+     * information, but the same results can be acheived with more up-to-date
+     * approaches using cascading style sheets and styles to match your web design.
+     *
+     * This file calls the submit_txn PHP file so form data can be
+     * processed and sent as a transaction to TGATE's Payment Gateway.
+     *
+     * This sample code is working code, but still needs security measures put
+     * into place to prevent cross-site scripting, SQL injection or other forms
+     * of corrupting the payment process.
+     * 
+     * For questions regarding this sample code or for other code samples, 
+     * contact developersupport@tgatepayments.com.
+     *
+     * Copyright 2010, TGATE Payments.
+     */ 
+?>
+
+<html>
+<head>
+<title>Sample PHP Code to Post Payments to TGATE's Payment Gateway</title>
+</head>
+<body>
+
+      <form target="_blank" action='submit_txn.php' method="POST">
+
+<table cellspacing="0" cellpadding="4" frame="box" bordercolor="#dcdcdc" rules="none" style="border-collapse: collapse;">
+<tr>
+  <td class="frmText" style="color: #000000; font-weight: normal;">Transaction Type:</td>
+  <td><input class="frmInput" type="text" size="25" name="TransType" value="Sale"></td>
+</tr>
+
+
+
+<tr>
+  <td class="frmText" style="color: #000000; font-weight: normal;">Name On Card:</td>
+  <td><input class="frmInput" type="text" size="50" name="NameOnCard" ></td>
+</tr>
+<tr>
+  <td class="frmText" style="color: #000000; font-weight: normal;">Billing Street:</td>
+  <td><input class="frmInput" type="text" size="50" name="Street" ></td>
+</tr>
+<tr>
+  <td class="frmText" style="color: #000000; font-weight: normal;">Billing Zip:</td>
+  <td><input class="frmInput" type="text" size="10" name="Zip" ></td>
+</tr>
+<tr>
+  <td class="frmText" style="color: #000000; font-weight: normal;">CardNum:</td>
+  <td><input class="frmInput" type="text" size="16" name="CardNum" ></td>
+</tr>
+<tr>
+  <td class="frmText" style="color: #000000; font-weight: normal;">ExpDate (mmyy):</td>
+  <td><input class="frmInput" type="text" size="4" name="ExpDate" ></td>
+</tr>
+<tr>
+  <td class="frmText" style="color: #000000; font-weight: normal;">Amount:</td>
+  <td><input class="frmInput" type="text" size="12" name="Amount"></td>
+</tr>
+
+<tr>
+  <td class="frmText" style="color: #000000; font-weight: normal;">InvNum:</td>
+  <td><input class="frmInput" type="text" size="20" name="InvNum"></td>
+</tr>
+<tr>
+  <td></td>
+  <td align="right"> <input type="submit" value="Process Payment" class="button"> <input type="reset" value="Reset!"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

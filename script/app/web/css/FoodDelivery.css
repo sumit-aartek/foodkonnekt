@@ -1,0 +1,1149 @@
+@CHARSET "UTF-8";
+.fdContainer {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+}
+/* Reset */
+.fdContainer div, .fdContainer span, .fdContainer applet, .fdContainer object, .fdContainer iframe,
+.fdContainer h1, .fdContainer h2, .fdContainer h3, .fdContainer h4, .fdContainer h5, .fdContainer h6, .fdContainer p, .fdContainer blockquote, .fdContainer pre,
+.fdContainer a, .fdContainer abbr, .fdContainer acronym, .fdContainer address, .fdContainer big, .fdContainer cite, .fdContainer code,
+.fdContainer del, .fdContainer dfn, .fdContainer em, .fdContainer img, .fdContainer ins, .fdContainer kbd, .fdContainer q, .fdContainer s, .fdContainer samp,
+.fdContainer small, .fdContainer strike, .fdContainer strong, .fdContainer sub, .fdContainer sup, .fdContainer tt, .fdContainer var,
+.fdContainer b, .fdContainer u, .fdContainer i, .fdContainer center,
+.fdContainer dl, .fdContainer dt, .fdContainer dd, .fdContainer ol, .fdContainer ul, .fdContainer li,
+.fdContainer fieldset, .fdContainer form, .fdContainer label, .fdContainer legend,
+.fdContainer table, .fdContainer caption, .fdContainer tbody, .fdContainer tfoot, .fdContainer thead, .fdContainer tr, .fdContainer th, .fdContainer td,
+.fdContainer article, .fdContainer aside, .fdContainer canvas, .fdContainer details, .fdContainer embed, 
+.fdContainer figure, .fdContainer figcaption, .fdContainer footer, .fdContainer header, .fdContainer hgroup, 
+.fdContainer menu, .fdContainer nav, .fdContainer output, .fdContainer ruby, .fdContainer section, .fdContainer summary,
+.fdContainer time, .fdContainer mark, .fdContainer audio, .fdContainer video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+.fdContainer article, .fdContainer aside, .fdContainer details, .fdContainer figcaption, .fdContainer figure, 
+.fdContainer footer, .fdContainer header, .fdContainer hgroup, .fdContainer menu, .fdContainer nav, .fdContainer section {
+	display: block;
+}
+.fdContainer ol, .fdContainer ul {
+	list-style: none;
+}
+.fdContainer blockquote, .fdContainer q {
+	quotes: none;
+}
+.fdContainer blockquote:before, .fdContainer blockquote:after,
+.fdContainer q:before, .fdContainer q:after {
+	content: '';
+	content: none;
+}
+.fdContainer table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* init */
+.fdContainer{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #8a8474;
+	position: relative;
+}
+.fdContainer *{
+    box-sizing: border-box;
+}
+
+.fdContainer *:before, 
+.fdContainer *:after {
+    box-sizing: border-box;
+}
+.fdContainer .fdContainerInner{
+	overflow: hidden;
+}
+
+/* General */
+.fdContainer .fdBlock{display: block !important}
+.fdContainer .fdBold{font-weight: bold !important}
+.fdContainer .fdItalic{font-style: italic !important}
+.fdContainer .fdUnderline{text-decoration: underline !important}
+.fdContainer .fdFloatLeft{float: left}
+.fdContainer .fdFloatRight{float: right !important}
+.fdContainer .fdClearLeft{clear: left}
+.fdContainer .fdClearRight{clear: right}
+.fdContainer .fdClearBoth{clear: both}
+.fdContainer .fdOverflow{overflow: hidden}
+.fdContainer .fdAlignRight{text-align: right !important}
+.fdContainer .fdAlignCenter{text-align: center !important}
+.fdContainer .fdAlignMiddle{vertical-align: middle !important}
+.fdContainer .fdUpperCase{text-transform: uppercase !important}
+.fdContainer .fdInlineBlock{display: inline-block}
+.fdContainer .fdM10{margin: 10px;}
+.fdContainer .fdR5{margin-right: 5px}
+.fdContainer .fdMr5{margin-right: 5px}
+.fdContainer .fdR14{margin-right: 14px}
+.fdContainer .fdT10{margin-top: 10px !important;}
+.fdContainer .fdT20{margin-top: 20px !important;}
+.fdContainer .fdB10{margin-bottom: 10px !important;}
+.fdContainer .fdMb3{margin-bottom: 3px !important;}
+.fdContainer .fdMb20{margin-bottom: 20px !important;}
+.fdContainer .fdW70{width: 70px;}
+.fdContainer .fdW90{width: 90px;}
+.fdContainer .fdW120{width: 120px;}
+.fdContainer .fdW180{width: 180px;}
+.fdContainer .fdW200{width: 200px;}
+.fdContainer .fdW100p{width: 100%;}
+.fdContainer .fdW90p{width: 90%;}
+.fdContainer .fdW85p{width: 85%;}
+.fdContainer .fdW80p{width: 80%;}
+.fdContainer .fdW70p{width: 70%;}
+.fdContainer .fdW50p{width: 50%;}
+.fdContainer .fdW40p{width: 40%;}
+.fdContainer .fdH100{height: 100px;}
+.fdContainer .fdH150{height: 150px;}
+
+.fdContainer .fdOverflow{overflow: hidden;}
+.fdContainer .fdDark{color: #1a1d1f;}
+
+.fdContainer a:link,
+.fdContainer a:visited,
+.fdContainer a:active{
+	color: #3fadbe;
+	outline: none;
+	text-decoration: none;
+}
+.fdContainer a:hover{
+	text-decoration: underline;
+}
+
+/* Locale menu */
+.fdContainer .fdLocale{
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+.fdContainer .fdLocaleMenu{
+	margin: 0 !important;
+	padding: 0;
+	list-style: none;
+	float: right !important;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	height: 34px;
+	overflow: hidden;
+	background-color: transparent;
+	border: 1px solid #c2bfb8;
+	width: 124px;
+}
+.fdContainer .fdLocaleMenu li{
+	display: inline-block;
+	margin: 0;
+	background-color: transparent;
+	width: 41px;
+}
+.fdContainer .fdLocaleMenu li:last-child{
+	width: 40px;
+}
+.fdContainer .fdLocaleMenu li a{
+	background-color: #ffffff;
+	display: inline-block;
+	width: 40px;
+	height: 34px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	position: relative;
+	text-decoration: none;
+	margin-right: 1px;
+}
+.fdContainer .fdLocaleMenu li a:LAST-CHILD{
+	margin-right: 0px;
+}
+.fdContainer .fdLocaleMenu li a img{
+	border: none;
+	position: absolute;
+	top: 11px;
+	left: 11px;
+}
+.fdContainer .fdLocaleMenu li a:hover{
+	background-color: #e0ddd4;
+}
+.fdContainer .fdLocaleMenu li a:active,
+.fdContainer .fdLocaleMenu li a:focus,
+.fdContainer .fdLocaleMenu li a.fdLocaleFocus{
+	background-color: #e0ddd6;
+}
+
+/* Fields */
+.fdContainer .fdText,
+.fdContainer .fdTextarea,
+.fdContainer .fdSelect{
+	background-color: #faf8f9;
+	border: solid 1px #c0c0b8;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 0px 8px;
+	line-height: 18px;
+	color: #a0a098;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	-moz-box-sizing: border-box;
+	-webkit-box-shadow: inset 0px 2px 3px 0px rgba(227,224,226,0.7);
+	-moz-box-shadow: inset 0px 2px 3px 0px rgba(227,224,226,0.7);
+	box-shadow: inset 0px 2px 3px 0px rgba(227,224,226,0.7);
+}
+.fdContainer .fdText{
+	height: 38px;
+    padding:0px 8px 0px 8px; 
+    padding:5px 8px 0px 8px\0/;  
+}
+.fdContainer .fdSelect{
+	height: 38px;
+	line-height: 38px;
+	padding-right: 0px;
+}
+/* Form */
+.fdContainer .fdForm{
+	
+}
+.fdContainer .fdForm p.fdParagraph{
+	overflow: hidden;
+	display: block;
+	margin-bottom: 14px;
+	text-align: left;
+}
+.fdContainer .fdForm p.fdParagraph span.fdTitle,
+.fdContainer .fdForm p.fdParagraph label.fdTitle{
+	display: block;
+	color: #41413f;
+	margin-bottom: 4px;
+	overflow: hidden;
+	text-align: left;
+	line-height: 24px;
+}
+.fdContainer .fdForm p.fdParagraph label.fdTitle span a{
+	line-height: 24px;
+}
+.fdContainer .fdForm p.fdParagraph label.fdTitle span.fdRed{
+	color: #ec5937;
+}
+.fdContainer .fdForm p.fdParagraph .fdAgreement input{
+	display: block;
+	float: left;
+	margin-right: 4px;
+}
+.fdContainer .fdForm p.fdParagraph .fdAgreement label{
+	display: block;
+	float: left;
+	margin-right: 4px;
+	line-height: 20px;
+}
+.fdContainer .fdForm p.fdParagraph .fdAgreement a{
+	display: block;
+	float: left;
+	line-height: 20px;
+}
+.fdContainer .fdForm .fdDatepick{
+	background: #faf8f9 url([URL]app/web/img/frontend/calendar.png) right 6px center no-repeat;
+	cursor: pointer;
+	width: 140px;
+}
+.fdContainer .fdForm label.fdError{
+	display: block;
+	color: #cc0000;
+	text-align: left;
+	line-height: 22px;
+}
+.fdContainer .fdFormHeading{
+	color: #68655e;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 22px 16px 20px 16px;
+	overflow: hidden;
+}
+.fdContainer .fdForm .fdFormHeading{
+	margin: 10px 0px 20px 0px;
+}
+.fdContainer .fdForm .fdFormHeading a.fdChange{
+	font-size: 14px;
+	font-weight: normal;
+}
+.fdContainer .fdForm .fdCrossLine{
+	height: 1px;
+	background-color: #d8d8d6;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.fdContainer .fdForm .fdCheckbox{
+	margin-top: 14px;
+}
+/* Buttons */
+.fdContainer .fdButtonContainer{
+	margin: 0px 16px 20px 16px;
+}
+.fdContainer .fdButtonContainer label{
+	display: block;
+	float: left;
+}
+.fdContainer a.fdButton{
+	-moz-box-shadow:inset 0px -4px 0px 0px #6caaa9;
+	-webkit-box-shadow:inset 0px -4px 0px 0px #6caaa9;
+	box-shadow:inset 0px -4px 0px 0px #6caaa9;
+	background-color:#7cbebc;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	
+	text-indent:0;
+	display:block;
+	float: left;
+	margin-right: 10px;
+	color:#ffffff;
+	height:69px;
+	line-height:69px;
+	text-decoration:none;
+	text-transform: uppercase;
+	text-align:center;
+	padding: 0px 30px;
+	font-weight: bold;
+}
+.fdContainer a.fdButton:HOVER{
+	-moz-box-shadow:inset 0px -4px 0px 0px #235b58;
+	-webkit-box-shadow:inset 0px -4px 0px 0px #235b58;
+	box-shadow:inset 0px -4px 0px 0px #235b58;
+	background-color:#6caaa9;
+}
+.fdContainer a.fdOrangeButton{
+	background-color:#ec5937;
+	-moz-box-shadow:inset 0px -4px 0px 0px #da401c;
+	-webkit-box-shadow:inset 0px -4px 0px 0px #da401c;
+	box-shadow:inset 0px -4px 0px 0px #da401c;
+	
+	height: 52px;
+	text-transform: uppercase;
+	line-height:48px;
+	font-size: 17px;
+}
+.fdContainer a.fdButtonCheckout{
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	float: none;
+}
+.fdContainer a.fdOrangeButton:HOVER{
+	-moz-box-shadow:inset 0px -4px 0px 0px #c23412;
+	-webkit-box-shadow:inset 0px -4px 0px 0px #c23412;
+	box-shadow:inset 0px -4px 0px 0px #c23412;
+	background-color:#e2593a;
+}
+.fdContainer a.fdNormalButton{
+	height: 52px;
+	line-height:48px;
+	font-size: 17px;
+}
+.fdContainer .fdButtonNext{
+	margin-right: 0px !important;
+	float: right !important;
+}
+.fdContainer a.fdButtonApply{
+	height: 30px;
+	line-height:28px;
+	font-size: 13px;
+	padding: 0px 10px;
+	margin-right: 0px;
+}
+.fdContainer .fdVoucherMessage{
+	color: #ec5937;
+}
+.fdContainer .fdButtonDisabled:HOVER,
+.fdContainer .fdButtonDisabled{
+	-moz-box-shadow:inset 0px -4px 0px 0px #807d7f !important;
+	-webkit-box-shadow:inset 0px -4px 0px 0px #807d7f !important;
+	box-shadow:inset 0px -4px 0px 0px #807d7f !important;
+	background-color:#b8b5b7 !important;
+	color: #717070 !important;
+	cursor: default;
+}
+/* Structure */
+.fdContainer .fdLoader{
+	display: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+	background: url([URL]app/web/img/frontend/pj-preloader.gif) no-repeat scroll center center rgba(153, 153, 153, 0.3);
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.fdContainer .fdMain{
+	width: 73.5%;
+	float: left;
+	margin-right: 1.5%;
+	
+}
+.fdContainer .fdCart{
+	width: 25%;
+	float: right;
+}
+.fdContainer .fdCategoryContainer{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+.fdContainer .fdCategoryContainer .fdCategoryList{
+	width: 90%;
+	height: 90px;
+	margin-right: 1%;
+    overflow: hidden;
+    float: left;
+}
+.fdContainer .fdCategoryContainer .fdCategoryList span{
+	display: block;
+	width: 2000px;
+	height: 90px;
+	overflow: hidden;
+}
+.fdContainer a.fdCateItem{
+	-moz-box-shadow:inset 0px -4px 0px 0px #6caaa9;
+	-webkit-box-shadow:inset 0px -4px 0px 0px #6caaa9;
+	box-shadow:inset 0px -4px 0px 0px #6caaa9;
+	background-color:#7cbebc;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	text-indent:0;
+	display:block;
+	float: left;
+	margin-right: 10px;
+	color:#ffffff;
+	height:69px;
+	line-height:69px;
+	text-decoration:none;
+	text-align:center;
+	padding: 0px 30px;
+	font-weight: bold;	
+}
+.fdContainer a.fdCateItem:HOVER{
+	-moz-box-shadow:inset 0px -4px 0px 0px #235b58;
+	-webkit-box-shadow:inset 0px -4px 0px 0px #235b58;
+	box-shadow:inset 0px -4px 0px 0px #235b58;
+	background-color:#6caaa9;
+}
+.fdContainer a.fdCateFocus,
+.fdContainer a.fdCateFocus:HOVER{
+	-moz-box-shadow:inset 0px -4px 0px 0px #235b58;
+	-webkit-box-shadow:inset 0px -4px 0px 0px #235b58;
+	box-shadow:inset 0px -4px 0px 0px #235b58;
+	background-color:#6caaa9;
+	position: relative;
+}
+.fdContainer a.fdCateFocus label{
+	display: block;
+	left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    bottom: -18px;
+    height: 41px;
+}
+.fdContainer a.fdCateFocus label abbr{
+	display: inline-block;
+	background: url([URL]app/web/img/frontend/focus.png) bottom center no-repeat !important;
+	width: 41px;
+	height: 40px;
+}
+.fdContainer .fdCategoryContainer .fdPrev{
+	background: #7cbebc url([URL]app/web/img/frontend/prev.png) center center no-repeat;
+	width: 4%;
+	margin-right: 1%;
+	padding: 0px;
+}
+.fdContainer .fdCategoryContainer .fdNext{
+	background: #7cbebc url([URL]app/web/img/frontend/next.png) center center no-repeat;
+	width: 4%;
+	margin-right: 0px;
+	padding: 0px;
+}
+
+.fdContainer .fdProductList{
+	width: 100%;
+}
+.fdContainer .fdProductBox{
+	border: 1px solid #dad9d4;
+	border-top: none;
+	padding: 5px 10px 5px 5px;
+	background-color: #fbf8f1;
+	overflow: hidden;
+}
+.fdContainer .fdProductBoxSelected{
+	background-color: #ffffff;
+}
+.fdContainer .fdProductList .fdProductBox:FIRST-CHILD{
+	border-top: 1px solid #dcd9d4;
+}
+
+.fdContainer .fdProductBox .fdImage{
+	float: left;
+	width: 84px;
+	height: 84px;
+	margin-right: 10px;
+	-moz-border-radius: 42px;
+	-webkit-border-radius: 42px;
+	border-radius: 42px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.fdContainer .fdProductBox .fdBoxOnRight{
+	overflow: hidden;
+	width: 86%; 
+}
+.fdContainer .fdProductBox .fdBoxHeading{
+	width: 100%; 
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+.fdContainer .fdProductBox .fdTitle{
+	overflow: hidden;
+}
+.fdContainer .fdProductBox .fdTitle a{
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	float: left;
+	display: block;
+	margin-top: 28px;
+	width: 72%;
+	text-align: left;
+}
+.fdContainer .fdProductBox .fdTitle .fdPrice{
+	overflow: hidden;
+	width: 28%;
+}
+.fdContainer .fdProductBox .fdTitle .fdPrice .fdSelect{
+	float: right;
+	margin-top: 22px;
+}
+.fdContainer .fdProductBox .fdTitle .fdPrice label{
+	float: right;
+	color: #67645d;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 80px;
+}
+.fdContainer .fdProductBox .fdBoxDesc{
+	overflow: hidden;
+	display: none;
+}
+.fdContainer .fdProductBoxSelected .fdBoxDesc{
+	display: block;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdDescription{
+	line-height: 22px;
+	margin-bottom: 14px;
+	text-align: left;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList{
+	overflow: hidden;
+	padding-right: 110px;
+	position: relative;
+	text-align: left;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdProductOrder{
+	height: 102px;
+	width: 100px;
+	float: left;
+	position: relative;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 17px;
+	padding: 19px 0px 0px 0px;
+	margin-bottom: 10px;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdAbsoluteButton{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-right: 0px;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBox{
+	border: 1px solid #c2bfb8;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin-right: 6px;
+	margin-bottom: 8px;
+	width: 150px;
+    display: inline-block;
+    vertical-align: top;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBox:HOVER{
+	background-color: #fff9e9;
+	border: 1px solid #febc06;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBox label{
+	display: block;
+	color: #32312c;
+	font-size: 14px;
+	padding: 12px 12px 0px 12px;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBox span.fdExtraPrice{
+	display: block;
+	color: #32312c;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBox a.fdAddExtra{
+	border-top: 1px solid #c2bfb8;
+	text-align: center;
+	height: 30px;
+	background-color: #e0ddd6;
+	color: #918e87;
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	line-height: 28px;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBox:HOVER a.fdAddExtra{
+	background-color: #f9ecca;
+	border-top: 1px solid #febc06;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBox .fdExtraQty{
+	display: none;
+	width: 100%;
+	border-top: 1px solid #febc06;
+	height: 30px;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBox .fdExtraQty .fdSpinner{
+	width: 35px;
+	height: 30px;
+	float: left;
+	background-color: #f9ecca;
+	text-align: center;
+	color: #332f2c;
+	line-height: 28px;
+	font-weight: bold;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBox .fdExtraQty .fdLeft{
+	float: left;
+	border-right: 1px solid #febc06;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBox .fdExtraQty .fdRight{
+	float: right;
+	border-left: 1px solid #febc06;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBox .fdExtraQty .fdSpinner abbr{
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBox .fdExtraQty .fdSpinner abbr:HOVER{
+	background-color: #fdcd47;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBox .fdExtraQty .fdMiddle{
+	width: 76px;
+	float: left;
+	background-color: #ffffff;
+}
+.fdContainer .fdProductBox .fdQtyInput{
+	height: 30px;
+	text-align: center;
+	width: 76px;
+	color: #332f2c;
+	border: none;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBoxSelected .fdExtraQty{
+	display: block;
+}
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBoxSelected a.fdAddExtra{
+	display: none;
+}
+
+.fdContainer .fdProductBox .fdBoxDesc .fdExtraList .fdExtraBoxSelected{
+	background-color: #fff9e9;
+	border: 1px solid #febc06;
+}
+
+/** Cart **/
+.fdContainer .fdCart .fdCartContainer{
+	-moz-box-shadow:inset 0px -4px 0px 0px #e0ddd4;
+	-webkit-box-shadow:inset 0px -4px 0px 0px #e0ddd4;
+	box-shadow:inset 0px -4px 0px 0px #e0ddd4;
+	background-color:#ffffff;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border:1px solid #e0ddd4;
+	padding-bottom: 5px;
+	overflow: hidden;
+}
+
+.fdContainer .fdCartContainer .fdHeading{
+	overflow: hidden;
+	height: 69px;
+	border-bottom: 1px solid #deded6;
+	padding: 20px 12px 14px 8px;
+}
+.fdContainer .fdCartContainer .fdHeading .title{
+	color: #908d86;
+	background: url([URL]app/web/img/frontend/cart.png) 0 0 no-repeat;
+	text-indent: 44px;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: bold;
+	float: left;
+}
+.fdContainer .fdCartContainer .fdHeading .items{
+	width: 30px;
+	height: 30px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	text-align: center;
+	background-color: #ec5937;
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 28px;
+	font-weight: bold;
+	float: right;
+}
+.fdContainer .fdCartContainer .fdEmptyCart{
+	margin: 12px;
+}
+.fdCartTbl{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 12px;
+	margin: 0 0 5px;
+}
+.fdCartTbl thead th{
+	background-color: #ffffff;
+	color: #818584;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 10px 5px;
+	text-align: left;
+	border-bottom: 1px solid #deded6;
+	font-size: 12px;
+}
+.fdCartTbl thead th:FIRST-CHILD{
+	padding-left: 12px;
+}
+.fdCartTbl tbody td{
+	background-color: #fff;
+	padding: 10px 5px;
+	vertical-align: top;
+	font-size: 12px;
+}
+.fdCartTbl tbody td:FIRST-CHILD {
+	padding-left: 12px;
+}
+.fdContainer .fdCartTbl a.fdCartItemRemove{
+	display: block;
+	width: 12px;
+	height: 12px;
+	background: url([URL]app/web/img/frontend/remove.png) 0 0 no-repeat;
+}
+
+.fdContainer .fdCartTbl tr.fdProductRow td{
+	color: #494b4a;
+	text-align: left;
+}
+.fdContainer .fdCartTbl tr.fdExtraRow td{
+	color: #939ea0;
+	text-align: left;
+}
+.fdContainer .fdCartTbl tr.fdLineRow td{
+	border-bottom: 1px solid #deded6;
+}
+.fdContainer .fdCartTbl td.fdQtyCol{
+	color: #494b4a !important;
+	text-align: center;
+}
+.fdContainer .fdCartTbl td.fdPriceCol{
+	color: #242520 !important;
+	text-align: right;
+}
+.fdContainer .fdCartTbl td.fdQtyCol a.fdCartAjust{
+	color: #3dadb9;
+	font-weight: bold;
+	text-decoration: none !important;
+}
+.fdContainer .fdCartContainer .fdCartButton{
+	overflow: hidden;
+	text-align: center;
+}
+.fdContainer .fdCartContainer .fdCartSubtotal{
+	color: #242520;
+	font-weight: bold;
+}
+.fdContainer .fdCartContainer .fdCartSubtotalLabel{
+	color: #4a4848;
+	font-weight: normal;
+}
+/**  Types **/
+.fdContainer .fdTypesContainer{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #dcd9d4;
+	background-color: #ffffff;
+}
+.fdContainer .fdTypesContainer .fdType {
+	display: block;
+    float: left;
+    height: 79px;
+    margin: 0 10px 16px 0;
+    cursor: pointer;
+}
+.fdContainer .fdTypesContainer .fdTypeHeading{
+	overflow: hidden;
+	border-bottom: 1px solid #dcd9d4;
+	padding: 16px 16px 0px 16px;
+}
+.fdTypePickup,
+.fdTypeDelivery {
+	overflow: hidden;
+	margin-right: 20px;
+}
+.fdTypePickup abbr{
+	height: 79px;
+	display: block;
+	float: left;
+}
+.fdTypePickup abbr.left{
+	background: url([URL]app/web/img/frontend/pickup_left.png) 0 -79px no-repeat;
+	width: 118px;
+}
+.fdTypePickup abbr.right{
+	background: url([URL]app/web/img/frontend/pickup_right.png) 0 -79px no-repeat;
+	width: 4px;
+}
+.fdTypePickup abbr.middle{
+	background: url([URL]app/web/img/frontend/pickup_middle.png) 0 -79px repeat-x;
+	color: #afaeac;
+	font-size: 16px;
+	font-weight: bold;
+	color: #afaeac;
+	line-height: 78px;
+	text-transform: uppercase;
+	padding-right: 18px;
+}
+.fdTypeDelivery abbr{
+	height: 79px;
+	display: block;
+	float: left;
+}
+.fdTypeDelivery abbr.left{
+	background: url([URL]app/web/img/frontend/delivery_left.png) 0 -79px no-repeat;
+	width: 118px;
+}
+.fdTypeDelivery abbr.right{
+	background: url([URL]app/web/img/frontend/delivery_right.png) 0 -79px no-repeat;
+	width: 4px;
+}
+.fdTypeDelivery abbr.middle{
+	background: url([URL]app/web/img/frontend/delivery_middle.png) 0 -79px repeat-x;
+	color: #afaeac;
+	font-size: 16px;
+	font-weight: bold;
+	color: #afaeac;
+	line-height: 78px;
+	text-transform: uppercase;
+	padding-right: 18px;
+}
+.fdContainer .fdTypesContainer .fdTypeFocus abbr{
+	background-position: 0 0;
+}
+.fdContainer .fdTypesContainer .fdHeading{
+	color: #68655e;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 26px 16px 12px 16px;
+	text-align: left;
+}
+.fdContainer .fdTypesContainer .fdForm{
+	padding: 16px;
+}
+.fdContainer .fdTypesContainer .fdTypeMapWrap{
+	width: 100%; 
+	height: 300px;
+	border: solid 1px #ccc;
+	margin: 0 0 16px;
+}
+ .fdContainer .fdTypesContainer .fdTypeMap{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+/** Form Container **/
+.fdContainer .fdFormContainer{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #dcd9d4;
+	background-color: #ffffff;
+}
+.fdContainer .fdFormContainer .fdForm{
+	padding: 16px;
+}
+
+.fdContainer .fdLoginMessage{
+	margin: 0px 16px 20px 16px;
+	color: #ec5937;
+	display: none;
+}
+
+.fdContainer .fdPreviousAddresses{
+	margin-bottom: 24px;
+	width: 100%;
+	display: none;
+}
+.fdContainer .fdPreviousAddresses label.fdTitle{
+	display: block;
+	margin-bottom: 14px;
+}
+.fdContainer .fdAddressList{
+	width: 100%;
+	max-height: 170px;
+	overflow-x: hidden;
+    overflow-y: auto;
+}
+.fdContainer .fdAddressList .fdAddressBox{
+	overflow: hidden;
+	margin-bottom: 12px;
+	border: 1px solid #dcd9d4;
+	padding: 12px;
+	color: #3f3e3a;
+}
+.fdContainer .fdAddressList .fdAddressBox:last-child{
+	margin-bottom: 0px;
+}
+.fdContainer .fdAddressList .fdAddressBox label.fdOrder{
+	display: block;
+	margin-bottom: 10px;
+}
+.fdContainer .fdAddressList .fdAddressBox label.fdAddr{
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+}
+.fdContainer .fdAddressList .fdAddressBox:HOVER {
+	background-color: #fbf8f1;
+	cursor: pointer;
+}
+.fdContainer .fdAddressList .fdAddressBox label:HOVER {
+	cursor: pointer;
+}
+.fdContainer .fdValidateLogin{
+	text-decoration: underline !important;
+}
+.bcal-table tbody td{
+	vertical-align: middle;
+}
+/*****Responsive for Product List**********/
+.fdResponsive.w599 .fdContainer .fdMain {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.fdResponsive.w599 .fdContainer .fdCart {
+    float: none;
+    width: 100%;
+}
+.fdResponsive.w599 .fdContainer .fdProductBox .fdBoxOnRight {
+    width: 82%;
+}
+.fdResponsive.w599 .fdContainer .fdProductBox .fdTitle a{
+	margin-top: 10px;
+}
+.fdResponsive.w599 .fdContainer .fdProductBox .fdTitle .fdPrice label{
+	line-height: 40px;
+}
+.fdResponsive.w599 .fdContainer .fdProductBox .fdTitle .fdPrice .fdSelect {
+    margin-top: 2px;
+}
+
+.fdResponsive.w600-699 .fdContainer .fdMain {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.fdResponsive.w600-699 .fdContainer .fdCart {
+    float: none;
+    width: 100%;
+}
+.fdResponsive.w600-699 .fdContainer .fdProductBox .fdBoxOnRight {
+    width: 83%;
+}
+
+.fdResponsive.w700-859 .fdContainer .fdMain {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.fdResponsive.w700-859 .fdContainer .fdCart {
+    float: none;
+    width: 100%;
+}
+.fdResponsive.w700-859 .fdContainer .fdProductBox .fdBoxOnRight {
+    width: 86%;
+}
+
+.fdResponsive.w860-979 .fdContainer .fdProductBox .fdBoxOnRight {
+    width: 84%;
+}
+
+
+.fdResponsive.w980-1024 .fdContainer .fdProductBox .fdBoxOnRight {
+    width: 86%;
+}
+.fdResponsive.w1024 .fdContainer .fdProductBox .fdBoxOnRight {
+    width: 86%;
+}
+
+.fdResponsive.w520 .fdContainer .fdProductBox .fdTitle a{
+	width: 100%;
+	float: none;
+}
+.fdResponsive.w520 .fdContainer .fdProductBox .fdTitle .fdPrice {
+    width: 100%;
+	float: none;
+}
+.fdResponsive.w520 .fdContainer .fdProductBox .fdTitle .fdPrice label{
+	float: left;
+}
+.fdResponsive.w520 .fdContainer .fdProductBox .fdTitle .fdPrice .fdSelect{
+	margin-top: 10px;
+	margin-bottom: 8px;
+	float: left;
+}
+.fdResponsive.w520 .fdContainer .fdProductBox .fdBoxHeading{
+	margin-bottom: 0px;
+}
+
+
+.fdResponsive.w520-749 .fdContainer .fdProductBox .fdTitle a{
+	width: 72%;
+	margin-top: 28px;
+}
+.fdResponsive.w520-749 .fdContainer .fdProductBox .fdTitle .fdPrice {
+    width: 28%;
+}
+
+.fdResponsive.w750 .fdContainer .fdProductBox .fdTitle a{
+	width: 72%;
+}
+.fdResponsive.w750 .fdContainer .fdProductBox .fdTitle .fdPrice {
+    width: 28%;
+}
+.fdResponsive.w520-749 .fdContainer .fdProductBox .fdTitle .fdPrice .fdSelect,
+.fdResponsive.w520-749 .fdContainer .fdProductBox .fdTitle .fdPrice label {
+    margin-top: 20px;
+}
+
+/*------Manmohan tabs ------*/
+.tabs-menu {
+    height: 30px;
+    float: left;
+    clear: both;
+}
+.tabs-menu li {
+    height: 30px;
+    float: left;
+    margin-right: 10px;    
+}
+.tabs-menu li a {
+    line-height: 33px;
+    padding: 7px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    background-color: #ccc;
+    border-top: 1px solid #d4d4d1;
+    border-right: 1px solid #d4d4d1;
+    border-left: 1px solid #d4d4d1;
+}
+.tabs-menu li a.current {
+    position: relative;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    z-index: 5;
+}
+.tabs-menu .current a {
+    color: #2e7da3;
+}
+.tab {
+    border: 1px solid #d4d4d1 !important;
+    background-color: #fff;
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.tab-content {
+    width: 660px;
+    padding: 20px !important;
+    display: none;
+}
+.tab > div:first-child {
+    display: block;
+}
+#tabs-container a#prev {
+    position: absolute;
+    width: 4%;
+    margin-right: 1%;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    background-color: #d4d4d1;
+    left: 0;
+}
+#tabs-container a#next {
+    position: absolute;
+    width: 4%;
+    margin-left: 1%;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    background-color: #d4d4d1;
+    right: 110px;
+}
+#tabs-container ul.slideshow {
+    width:90%;
+    margin: 0 5%;
+}
+/*------ End of CSS ------*/
+.fdContainerInner .mlocation {
+	width: 100%;
+	padding-bottom: 15px;
+}
+.fdContainerInner select.fdMyLocationNode {
+	cursor: pointer;
+	border: solid 1px #c9d1da;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #fff;
+	-moz-box-shadow: inset 1px 1px 1px #eeeff0;
+	-webkit-box-shadow: inset 1px 1px 1px #eeeff0;
+	box-shadow: inset 1px 1px 1px #eeeff0;
+	font: normal 12px/14px Verdana, sans-serif;
+	font-family: Verdana !important;
+	margin: 0;
+	padding: 7px 6px;
+}

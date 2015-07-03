@@ -1,0 +1,32 @@
+RewriteEngine On
+
+# Redirect to non www to www
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Redirect to http to https
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# disable TRACK and TRACE http methods. 'RewriteEngine On' is required!
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+RewriteRule .* - [F]
+
+Options -Indexes
+ServerSignature Off
+<ifModule mod_headers.c>
+	Header unset X-Powered-By
+</ifModule>
+
+<IfModule php5_module>
+	php_value session.cookie_httponly true
+</IfModule>
+
+###############
+# URL REWRITE #
+#RewriteRule ^([^/]*)/([^/]*)\.html$ /index.php?controller=$1&action=$2 [L]
+
+# FOR FORNT VIEW LAYOUT #
+#RewriteRule ^restaurants/([^/]*)$ /index.php?controller=pjFrontLayouts&action=pjActionIndex&restaurants=$1 [L]
+
+RewriteRule ^([^/]*)/restaurants/([^/]*)$ /index.php?controller=pjFrontLayouts&action=pjActionIndex&name=$1&restaurants=$2 [L]

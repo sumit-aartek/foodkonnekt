@@ -1,0 +1,109 @@
+<?php
+//$controller->isFrontLogged()==1
+//echo "client logged in ID ==>  ".$CLIENT['id'];
+echo " Logged in Id".$controller->_get('p_location_id');
+$servername ="localhost";
+$username = "desisaud_foodDB";
+$password = "Sum!t123";
+$dbname = "desisaud_onlineorder";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT  o.CLOVER_MID, o.CLOVER_ACCESS_TOKEN_ID FROM clover_phpjabber_merchant_location_map o WHERE o.PHPJABBER_LOCATION_ID=".$controller->_get('p_location_id');
+echo "sql:".$sql;
+$result = $conn->query($sql);
+$CLOVER_MID='';
+$ACCESS_TOKEN='';
+if ($result->num_rows > 0) {
+     // output data of each row
+     while($row = $result->fetch_assoc()) {
+     //    echo "<br>CLOVER_MID: ". $row["CLOVER_MID"]. " ACCESS_TOKEN:- " . $row["CLOVER_ACCESS_TOKEN_ID"] . "<br>";
+   $CLOVER_MID=$row["CLOVER_MID"];
+   $ACCESS_TOKEN=$row["CLOVER_ACCESS_TOKEN_ID"];
+	echo "Acces tokenId:-".$ACCESS_TOKEN;
+     }
+} else {
+     echo "0 results";
+}
+
+$conn->close();
+$urlPrefix = 'https://api.clover.com:443/v3/merchants/'.$CLOVER_MID;
+$url = $urlPrefix.'/customers/?access_token='.$ACCESS_TOKEN;
+echo "on customer".$url;
+function file_post_contents1($url, $data)
+{
+    $opts = array('http' =>
+        array(
+            'method'  => 'POST',
+            'header'  => 'Content-type: application/json',
+            'content' => $data
+        )
+    );
+
+    $context = stream_context_create($opts);
+    return file_get_contents($url, false, $context);
+}
+
+$data_string ='{"id": "", "lastName": "","customerSince": "","phoneNumbers": [ {"id": "","phoneNumber":"'.$FORM['c_phone'].'"}], "marketingAllowed": false,"firstName": "'.$FORM['c_name'].'","emailAddresses": [{ "id": "","emailAddress":"'.$FORM['c_email'].'"}]}';
+
+ $response1 = file_post_contents1($url,$data_string);
+  $result = json_decode($response1);
+$CloverCustomerId = $result->id;
+ //
+  echo "clover customerid:". $CloverCustomerId;
+$servername = "localhost";
+$username = "desisaud_foodDB";
+$password = "Sum!t123";
+$dbname = "desisaud_onlineorder";
+		
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+} 
+$sql = "SELECT id FROM myshoppingkartfood_delivery_clients ORDER BY id DESC LIMIT 1";
+$result = $conn->query($sql);
+$PHPJABBER_CUSTOMER_ID='';
+$size=$result->num_rows;
+if ($result->num_rows > 0) {
+     // output data of each row
+     while($row = $result->fetch_assoc()) {
+     //    echo "<br>CLOVER_MID: ". $row["CLOVER_MID"]. " ACCESS_TOKEN:- " . $row["CLOVER_ACCESS_TOKEN_ID"] . "<br>";
+  $PHPJABBER_CUSTOMER_ID=$row["id"];
+ echo "customer Id :".$PHPJABBER_CUSTOMER_ID;
+     }
+} else {
+     echo "0 results";
+}
+//$conn->close();
+
+// Create connection
+
+//$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+} 
+$sql1 = "INSERT INTO clover_phpjabber_customer_client_map (phpJabberCId, CloverCustomerID)VALUES('51', '".$CloverCustomerId."')";
+echo "insert sql :=======".$sql1;
+$conn->multi_query($sql1)
+if ($conn->multi_query($sql1) == TRUE) {
+		 echo "<br>New records created successfully in clover_phpjabber_modifire_extra_map";
+		} else {
+		 echo "Error: " . $sql . "<br>" . $conn->error;
+		}
+$conn->close();
+ 
+
+?>
+<div id="fdCurl_<?php echo $index; ?>" class="fdCurl"><?php include PJ_VIEWS_PATH . 'pjFront/elements/curl.php'; ?></div>
+ <div id="fdCart_<?php echo $index; ?>" class="fdCart"><?php include PJ_VIEWS_PATH . 'pjFront/elements/lineItem.php'; ?></div>
+ <div id="fdCurl_<?php echo $index; ?>" class="fdCurl"><?php include PJ_VIEWS_PATH . 'pjFront/elements/addModifier.php'; ?>
+ 
+ <div id="fdCart_<?php echo $index; ?>" class="fdCart"><?php include PJ_VIEWS_PATH . 'pjFront/elements/addPayment.php'; ?></div>
