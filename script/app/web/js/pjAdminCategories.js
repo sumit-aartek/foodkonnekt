@@ -6,7 +6,12 @@ var jQuery_1_8_2 = jQuery_1_8_2 || $.noConflict();
 			$frmUpdateCategory = $("#frmUpdateCategory"),
 			dialog = ($.fn.dialog !== undefined),
 			validate = ($.fn.validate !== undefined),
+			multiselect = ($.fn.multiselect !== undefined),
 			datagrid = ($.fn.datagrid !== undefined);
+		
+		if (multiselect) {
+			$("#category_id").multiselect({noneSelectedText: myLabel.choose});
+		}
 		
 		if ($frmCreateCategory.length > 0 && validate) {
 			$frmCreateCategory.validate({

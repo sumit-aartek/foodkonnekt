@@ -41,8 +41,9 @@ class pjAdminSignUp extends pjAppController
 	}
 	
 	public function pjActionClover()		
-	{
-		$this->setLayout('pjAdminSingUpLayout');
+	{		
+		$this->setLayout('pjAdminSignUpLayout');
+		
 		$data = array(
 			'merchant_id' => $_GET['merchant_id'],
 			'employee_id' => $_GET['employee_id'],
@@ -55,12 +56,12 @@ class pjAdminSignUp extends pjAppController
 	
 	public function pjActionForm()
 	{		
-		$this->setLayout('pjAdminSingUpLayout');
+		$this->setLayout('pjAdminSignUpLayout');
 	}
 	
 	public function pjActionMain()
 	{
-		$this->setLayout('pjAdminSingUpLayout');
+		$this->setLayout('pjAdminSignUpLayout');
 	}	
 	/*-------------------- This time not use below function -----------------------*/
 	public function pjActionCloverApiData()

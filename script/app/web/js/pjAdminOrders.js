@@ -6,7 +6,9 @@ var jQuery_1_8_2 = jQuery_1_8_2 || $.noConflict();
 			$frmCreateOrder = $('#frmCreateOrder'),
 			$frmUpdateOrder = $('#frmUpdateOrder'),
 			$dialogReminderEmail = $("#dialogReminderEmail"),
+			$frmFilter = $(".frm-filter"),
 			dialog = ($.fn.dialog !== undefined),
+			multiselect = ($.fn.multiselect !== undefined),
 			datepicker = ($.fn.datepicker !== undefined),
 			datagrid = ($.fn.datagrid !== undefined),
 			validate = ($.fn.validate !== undefined),
@@ -20,6 +22,10 @@ var jQuery_1_8_2 = jQuery_1_8_2 || $.noConflict();
 				}
 			};
 	
+		if (multiselect) {
+			$("#location_id").multiselect({noneSelectedText: '-- Location --'});
+		}
+		
 		if ($tabs.length > 0 && tabs) {
 			$tabs.tabs(tOpt);
 		}
@@ -272,22 +278,23 @@ var jQuery_1_8_2 = jQuery_1_8_2 || $.noConflict();
 				buttons: [{type: "edit", url: "index.php?controller=pjAdminOrders&action=pjActionUpdate&id={:id}"},
 				          {type: "delete", url: "index.php?controller=pjAdminOrders&action=pjActionDeleteOrder&id={:id}"}
 						 ],
-				columns: [
+				columns:[
 				          {text: myLabel.name, type: "text", sortable: false, width:200},
 				          {text: myLabel.date_time, type: "text", sortable: false, editable: false, width:140},
 				          {text: myLabel.total, type: "text", sortable: false, editable: false, width:70},
 				          {text: myLabel.type, type: "text", sortable: false, editable: false, width: 70, renderer: formatType},
 				          {text: myLabel.status, type: "select", sortable: true, editable: true, width: 100, options: [
-				                                                                                     {label: myLabel.pending, value: "pending"}, 
-				                                                                                     {label: myLabel.confirmed, value: "confirmed"},
-				                                                                                     {label: myLabel.cancelled, value: "cancelled"}
-				                                                                                     ], applyClass: "pj-status"}],
+								{label: myLabel.pending, value: "pending"},
+								{label: myLabel.confirmed, value: "confirmed"},
+								{label: myLabel.cancelled, value: "cancelled"}],
+								applyClass: "pj-status"}
+						],
 				dataUrl: "index.php?controller=pjAdminOrders&action=pjActionGetOrder" + pjGrid.queryString,
 				dataType: "json",
 				fields: ['client_name', 'datetime', 'total', 'type', 'status'],
 				paginator: {
 					actions: [
-					   {text: myLabel.delete_selected, url: "index.php?controller=pjAdminOrders&action=pjActionDeleteOrderBulk", render: true, confirmation: myLabel.delete_confirmation},
+					   //{text: myLabel.delete_selected, url: "index.php?controller=pjAdminOrders&action=pjActionDeleteOrderBulk", render: true, confirmation: myLabel.delete_confirmation},
 					   {text: myLabel.exported, url: "index.php?controller=pjAdminOrders&action=pjActionExportOrder", ajax: false}
 					],
 					gotoPage: true,
@@ -394,7 +401,8 @@ var jQuery_1_8_2 = jQuery_1_8_2 || $.noConflict();
 				content = $grid.datagrid("option", "content"),
 				cache = $grid.datagrid("option", "cache");
 			$.extend(cache, {
-				q: $this.find("input[name='q']").val()
+				q: $this.find("input[name='q']").val(),
+				type: $this.find("select[name=type]").val()
 			});
 			$grid.datagrid("option", "cache", cache);
 			$grid.datagrid("load", "index.php?controller=pjAdminOrders&action=pjActionGetOrder", "created", "DESC", content.page, content.rowCount);
@@ -535,6 +543,61 @@ var jQuery_1_8_2 = jQuery_1_8_2 || $.noConflict();
 			if ($dialogReminderEmail.length > 0 && dialog) {
 				$dialogReminderEmail.data("id", $(this).data("id")).dialog("open");
 			}
+		}).on("change", "#searchType", function(e) {
+			var val = $(this).val(),
+				filter_box = $("#filter_"+ val);
+			$('.filter_box').css('display', 'none');
+			filter_box.css('display', 'inline');
+		}).on("change", "#filter_type", function(e) {
+			if (e && e.preventDefault) {
+				e.preventDefault();
+			}
+			var $this = $(this),
+				content = $grid.datagrid("option", "content"),
+				cache = $grid.datagrid("option", "cache"),
+				obj = {};
+			obj.type = $this.val();
+			obj['fromDate'] = $('#o_date_from').val();
+			obj['toDate'] = $('#o_date_to').val();
+			$.extend(cache, obj);
+			$grid.datagrid("option", "cache", cache);
+			$grid.datagrid("load", "index.php?controller=pjAdminOrders&action=pjActionGetOrder", "created", "DESC", content.page, content.rowCount);
+			return false;
+		}).on("change", "#filter_status", function(e) {
+			if (e && e.preventDefault) {
+				e.preventDefault();
+			}
+			var $this = $(this),
+				content = $grid.datagrid("option", "content"),
+				cache = $grid.datagrid("option", "cache"),
+				obj = {};
+			obj.status = $this.val();
+			obj['fromDate'] = $('#o_date_from').val();
+			obj['toDate'] = $('#o_date_to').val();
+			$.extend(cache, obj);
+			$grid.datagrid("option", "cache", cache);
+			$grid.datagrid("load", "index.php?controller=pjAdminOrders&action=pjActionGetOrder", "created", "DESC", content.page, content.rowCount);
+			return false;
+		}).on("click", "#search", function(e) {
+			if (e && e.preventDefault){
+				e.preventDefault();
+			}
+			var $this = $(this),
+				content = $grid.datagrid("option", "content"),
+				cache = $grid.datagrid("option", "cache"),
+				obj = {};
+			//obj.location_id = $('#location_id').val();
+			var $str = [];
+			$.each($('input[name=multiselect_location_id]:checked'), function(){
+				$str.push($(this).val());
+			});			
+			obj.location_id = $str.join(",");
+			obj['fromDate'] = $('#o_date_from').val();
+			obj['toDate'] = $('#o_date_to').val();
+			$.extend(cache, obj);
+			$grid.datagrid("option", "cache", cache);
+			$grid.datagrid("load", "index.php?controller=pjAdminOrders&action=pjActionGetOrder", "created", "DESC", content.page, content.rowCount);
+			return false;
 		});
 		
 		if ($dialogReminderEmail.length > 0 && dialog) {

@@ -228,7 +228,7 @@ catch(Exception $e){
 						</tr>
 						<tr>  
 							<td align="center" class="instructions" colspan="2">
-								Click <a href="<?php echo PJ_INSTALL_URL. $c_merchant_name?>/restaurants/<?=$c_user_id?>">here</a> to return to <!--[MerchantName]-->
+								Click <a href="<?php echo PJ_BASE_PATH. $c_merchant_name?>/restaurants/<?=$c_user_id?>">here</a> to return to <!--[MerchantName]-->
 							</td>  
 						</tr> 
 					</table>

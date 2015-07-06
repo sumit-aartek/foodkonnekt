@@ -44,7 +44,7 @@ switch ($tpl['arr']['payment_method'])
 		?>		
 		<div class="fdSystemMessage">
 			<?php
-			$system_msg = str_replace("[STAG]", "<a href='". PJ_INSTALL_URL. $user_name.'/restaurants/'.base64_encode($_SESSION['order_data']['o_user_id']) ."'>", $front_messages[3]);
+			$system_msg = str_replace("[STAG]", "<a href='". PJ_BASE_PATH. $user_name.'/restaurants/'.base64_encode($_SESSION['order_data']['o_user_id']) ."'>", $front_messages[3]);
 			$system_msg = str_replace("[ETAG]", "</a>", $system_msg); 
 			echo $system_msg; 
 			?>

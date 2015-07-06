@@ -317,11 +317,9 @@
     line-height: 40px;
 }
 .header-logo {
-	float: left;
-    height: 62px;
-    margin: 22px 35.8%;
-    text-align: center;
-    width: 214px;
+  margin: 22px auto;
+  text-align: center;
+  display: block;
 }
 .ui-datepicker td a,
 .ui-datepicker span.ui-state-default {

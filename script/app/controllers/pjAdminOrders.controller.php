@@ -12,7 +12,18 @@ class pjAdminOrders extends pjAdmin
 		
 		if ($this->isAdmin() || $this->isEditor())
 		{
+			$location = pjLocationModel::factory()
+				->join('pjMultiLang', "t2.foreign_id = t1.id AND t2.model = 'pjLocation' AND t2.locale = '".$this->getLocaleId()."' AND t2.field = 'name'", 'left')
+				->where('t1.user_id', $_SESSION['admin_user']['id'])
+				->select("t1.*, t2.content AS name")
+				->orderBy("name ASC")
+				->findAll()
+				->getData();
+				
+			$this->set('location', $location);
 			$this->appendJs('jquery.datagrid.js', PJ_FRAMEWORK_LIBS_PATH . 'pj/js/');
+			$this->appendJs('jquery.multiselect.min.js', PJ_THIRD_PARTY_PATH . 'multiselect/');
+			$this->appendCss('jquery.multiselect.css', PJ_THIRD_PARTY_PATH . 'multiselect/');
 			$this->appendJs('pjAdminOrders.js');
 		} else {
 			$this->set('status', 2);
@@ -24,7 +35,7 @@ class pjAdminOrders extends pjAdmin
 		$this->setAjax(true);
 	
 		if ($this->isXHR())
-		{
+		{			
 			$pjOrderModel = pjOrderModel::factory()
 				->join('pjClient', "t2.id=t1.client_id", 'left outer')
 				->where('t1.user_id', $_SESSION['admin_user']['id']);
@@ -34,19 +45,60 @@ class pjAdminOrders extends pjAdmin
 				$q = pjObject::escapeString($_GET['q']);
 				$pjOrderModel->where("(t1.id = '$q' OR t1.uuid = '$q' OR t1.c_name LIKE '%$q%' OR t1.c_email LIKE '%$q%')");
 			}
+			$lc_arr = explode(',', $_GET['location_id']);
 			
-			if (isset($_GET['status']) && !empty($_GET['status']) && in_array($_GET['status'], array('confirmed','cancelled','pending')))
-			{
-				$pjOrderModel->where('t1.status', $_GET['status']);
+			if(empty($_GET['fromDate']) && empty($_GET['toDate']))
+			{				
+				if (isset($_GET['status']) && !empty($_GET['status']) && in_array($_GET['status'], array('confirmed','cancelled','pending')))
+				{
+					$pjOrderModel->where('t1.status', $_GET['status']);
+				}
+				if (isset($_GET['client_id']) && (int) $_GET['client_id'] > 0)
+				{
+					$pjOrderModel->where('t1.client_id', $_GET['client_id']);
+				}
+				if (isset($_GET['type']) && !empty($_GET['type']))
+				{
+					$pjOrderModel->where('t1.type', $_GET['type']);
+				}
+				if (isset($_GET['location_id']) && !empty($_GET['location_id']))
+				{
+					$condition = '';
+					foreach($lc_arr as $row) {
+						$condition .= 't1.location_id='.$row.' OR ';
+					}
+					$condition = substr($condition, 0, strlen($condition)-4);
+					$pjOrderModel->where($condition);
+				}
+			} else {
+				$formDate = date('Y-m-d', strtotime($_GET['fromDate']));
+				$toDate = date('Y-m-d', strtotime($_GET['toDate']));
+				if (isset($_GET['status']) && !empty($_GET['status']))
+				{
+					$pjOrderModel->where('t1.status', $_GET['status']);
+					$pjOrderModel->where("date(t1.p_dt) BETWEEN '". $formDate ."' AND '". $toDate ."'");
+				}
+				if (isset($_GET['client_id']) && (int) $_GET['client_id'] > 0)
+				{
+					$pjOrderModel->where('t1.client_id', $_GET['client_id']);
+					$pjOrderModel->where("date(t1.p_dt) BETWEEN '". $formDate ."' AND '". $toDate ."'");
+				}
+				if (isset($_GET['type']) && !empty($_GET['type']))
+				{
+					$pjOrderModel->where('t1.type', $_GET['type']);
+					$pjOrderModel->where("date(t1.p_dt) BETWEEN '". $formDate ."' AND '". $toDate ."'");
+				}
+				if (isset($_GET['location_id']) && !empty($_GET['location_id']))
+				{					
+					$condition = '';
+					foreach($lc_arr as $row) {
+						$condition .= 't1.location_id='.$row.' OR ';
+					}
+					$condition = substr($condition, 0, strlen($condition)-4);
+					$pjOrderModel->where($condition);
+					$pjOrderModel->where("date(t1.p_dt) BETWEEN '". $formDate ."' AND '". $toDate ."'");
+				}
 			}
-			if (isset($_GET['client_id']) && (int) $_GET['client_id'] > 0)
-			{
-				$pjOrderModel->where('t1.client_id', $_GET['client_id']);
-			}
-			if (isset($_GET['type']) && !empty($_GET['type']))
-			{
-				$pjOrderModel->where('t1.type', $_GET['type']);
-			}	
 			$column = 'created';
 			$direction = 'DESC';
 			if (isset($_GET['direction']) && isset($_GET['column']) && in_array(strtoupper($_GET['direction']), array('ASC', 'DESC')))

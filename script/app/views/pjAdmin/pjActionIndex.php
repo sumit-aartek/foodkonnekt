@@ -41,7 +41,7 @@ if (isset($tpl['status']))
 		<div class="dashboard_top">
 			<div class="dashboard_column_top"><?php __('lblLatestDeliveryOrders');?> (<a href="<?php echo $_SERVER['PHP_SELF']; ?>?controller=pjAdminOrders&amp;action=pjActionIndex&amp;type=delivery"><?php __('lblViewAll');?></a>)</div>
 			<div class="dashboard_column_top"><?php __('lblLatestPickupOrders');?> (<a href="<?php echo $_SERVER['PHP_SELF']; ?>?controller=pjAdminOrders&amp;action=pjActionIndex&amp;type=pickup"><?php __('lblViewAll');?></a>)</div>
-			<div class="dashboard_column_top"><?php count($tpl['location_arr']) == 1 ? __('lblLocationWorkingStatus') : __('lblLocationsWorkingStatus') ;?></div>
+			<!--<div class="dashboard_column_top"><?php count($tpl['location_arr']) == 1 ? __('lblLocationWorkingStatus') : __('lblLocationsWorkingStatus') ;?></div>-->
 		</div>
 		<div class="dashboard_middle">
 			<div class="dashboard_column">
@@ -77,7 +77,7 @@ if (isset($tpl['status']))
 			
 			<div class="dashboard_column">
 				<div class="dashboard_list dashboard_latest_list">
-					<?php
+					<?php					
 					if(!empty($tpl['latest_pickup']))
 					{
 						foreach($tpl['latest_pickup'] as $v)
@@ -103,7 +103,7 @@ if (isset($tpl['status']))
 					?>
 				</div>
 			</div>
-			<div class="dashboard_column">
+			<!--<div class="dashboard_column">
 				<div class="dashboard_list dashboard_latest_list quick_links">
 					<?php
 					foreach($tpl['location_arr'] as $v)
@@ -116,7 +116,7 @@ if (isset($tpl['status']))
 					}
 					?>
 				</div>
-			</div>
+			</div>-->
 		</div>
 		<div class="dashboard_bottom"></div>
 	</div>

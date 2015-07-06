@@ -51,15 +51,15 @@ if (isset($tpl['status']))
 			<!-- user preview -->
 			<?php
 			$name = urlencode($tpl['user_arr']['merchant_name']);
-			echo 'https://www.foodkonnekt.com/script/index.php?controller=pjFrontLayouts&action=pjActionIndex&name='. $name .'&restaurants='. base64_encode($tpl['user_arr']['user_id']);
+			//echo 'https://www.foodkonnekt.com/script/index.php?controller=pjFrontLayouts&action=pjActionIndex&name='. $name .'&restaurants='. base64_encode($tpl['user_arr']['user_id']);
 			
 			//http://www.foodkonnekt.com/index.php?controller=pjFrontLayouts&action=pjActionIndex&name=clover+Final+Account&restaurants=60
 			
 			?>
 			<p style="margin: 20px 0 7px; font-weight: bold">User Preview</p>			
-			<textarea class="pj-form-field textarea_install" style="overflow: auto; height:80px; width: 728px;"><?php echo PJ_INSTALL_URL. $name; ?>/restaurants/<?php echo base64_encode($tpl['user_arr']['user_id']); ?></textarea>
+			<textarea class="pj-form-field textarea_install" style="overflow: auto; height:80px; width: 728px;"><?php echo PJ_BASE_PATH . $name; ?>/restaurants/<?php echo base64_encode($tpl['user_arr']['user_id']); ?></textarea>
 			<p style="margin-top: 10px;">
-				<a target="_blank" class="pj-button" href="<?php echo PJ_INSTALL_URL. $name; ?>/restaurants/<?php echo base64_encode($tpl['user_arr']['user_id']); ?>"/><?php __('btnPreview'); ?></a>
+				<a target="_blank" class="pj-button" href="<?php echo PJ_BASE_PATH . $name; ?>/restaurants/<?php echo base64_encode($tpl['user_arr']['user_id']); ?>"/><?php __('btnPreview'); ?></a>
 			</p>
 
 			<div style="display:none" id="pj_install_clone">&lt;link href="<?php echo PJ_INSTALL_FOLDER; ?>index.php?controller=pjFront&action=pjActionLoadCss" type="text/css" rel="stylesheet" /&gt;

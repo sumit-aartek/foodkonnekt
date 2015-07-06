@@ -32,7 +32,14 @@ $country      = $response_address->country;
 $state        = $response_address->state;
 $zip          = $response_address->zip;
 
-$employee_id  = $_SESSION['cloverData']['employee_id'];
+//Get employee id from clover.
+$employee_id = '';
+$emp_resp = file_get_contents('https://api.clover.com/v3/merchants/'. $merchant_id .'/employees?access_token='. $access_token);
+$emp_resp = json_decode($emp_resp);
+foreach($emp_resp->elements as $emp_row) {
+	$employee_id = $emp_row->id;
+}
+echo $employee_id;
 //$client_id    = $_SESSION['cloverData']['client_id'];
 //$name         = $_SESSION['cloverData']['name'];
 

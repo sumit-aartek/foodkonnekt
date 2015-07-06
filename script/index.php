@@ -1,4 +1,8 @@
 <?php
+ini_set('session.gc_maxlifetime',300);
+ini_set('session.gc_probability',1);
+ini_set('session.gc_divisor',1);
+
 if (!headers_sent())
 {
 	session_name('FoodDelivery');

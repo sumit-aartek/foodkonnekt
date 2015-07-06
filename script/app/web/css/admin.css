@@ -1051,3 +1051,26 @@ ul.ui-multiselect-checkboxes li input{
 	font-size: 14px;
 	color: #6f8a9f
 }
+.valid_period {
+	display: inline-block;
+    margin-left: 5px;
+    width: auto;
+}
+.valid_period .pj-form-field-custom-after { top: 10px; }
+.valid_period label.title {
+	display: inline-block;
+	float: left;
+	line-height: 30px;
+	margin-right: 5px;
+}
+#filter_location .ui-multiselect {	
+	padding: 4px 0 4px 6px;
+	text-align: left;
+	line-height: 20px;
+}
+#search {
+	position: relative;
+	top: 2px;
+	left: 5px;
+	cursor: pointer;
+}
